@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>PR07_a</title><meta name="generator" content="MATLAB 9.9"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2021-05-23"><meta name="DC.source" content="PR07_a.m"><style type="text/css">
+      --><title>Problema de ejemplo</title><meta name="generator" content="MATLAB 9.9"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2021-05-23"><meta name="DC.source" content="PR07_a.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -67,13 +67,16 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><pre class="codeinput">n=-5:1:10;
+  </style></head><body><div class="content"><h1>Problema de ejemplo</h1><p>Se&ntilde;al discreta de ejemplo</p><pre class="codeinput">n=-5:1:10;
 f = @(n) exp(-n).*heaviside(n);
 g = @(n) 2.^(-n).*heaviside(n);
 stem(n,f(n), <span class="string">'r'</span>)
 stem(n,g(n))
 </pre><img vspace="5" hspace="5" src="PR07_a_01.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
+%% Problema de ejemplo
+% Señal discreta de ejemplo
+
 n=-5:1:10;
 f = @(n) exp(-n).*heaviside(n);
 g = @(n) 2.^(-n).*heaviside(n);
